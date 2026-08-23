@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Ben Cédric ZOUBE — Ingénieur Réseaux & Systèmes</title>
+    <meta name="description" content="Portfolio d'Ariel Ben Cédric ZOUBE, ingénieur réseaux et systèmes, spécialisé en cybersécurité, intelligence artificielle et développement fullstack.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ariel Ben Cédric ZOUBE — Ingénieur Réseaux & Systèmes">
+    <meta property="og:description" content="Portfolio d'ingénieur réseaux, systèmes, cybersécurité et IA.">
+    <meta property="og:image" content="assets/images/photo-profil.jpg">
+    <meta property="og:url" content="https://arielzoube.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+
+    <!-- Bootstrap & Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+     NAVBAR
+    ============================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-xl">
+            <a class="navbar-brand brand" href="#accueil">
+                <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
+                <span data-i18n="brandName">Ariel ZOUBE</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+                <i class="fa-solid fa-bars" style="color:var(--text);"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom active" href="#accueil" data-i18n="navHome">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#apropos" data-i18n="navAbout">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#competences" data-i18n="navSkills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#projets" data-i18n="navProjects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#parcours" data-i18n="navPath">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#memoire" data-i18n="navMemoire">Mémoire</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <div class="lang-toggle" role="group">
+                        <button type="button" class="active" id="lang-fr">FR</button>
+                        <button type="button" id="lang-en">EN</button>
+                    </div>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                        <i class="fa-regular fa-sun" id="theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+     ACCUEIL
+    ============================================================ -->
+    <section id="accueil" class="section-panel">
+        <div class="panel reveal">
+            <div class="hero-grid">
+                <div>
+                    <div class="eyebrow" data-i18n="welcomeEyebrow">👋 Bienvenue</div>
+                    <h1 class="hero-title" data-i18n="heroTitle">
+                        Ariel <span class="accent">Ben Cédric ZOUBE</span>
+                    </h1>
+                    <p class="hero-lead" data-i18n="heroLead">
+                        Ingénieur Réseaux &amp; Systèmes — Développement fullstack &amp; Cybersécurité
+                    </p>
+                    <p class="hero-desc" data-i18n="heroDesc">
+                        Passionné par la sécurisation des systèmes, l'administration réseau et le développement d'applications. Je recherche un emploi ou un stage.
+                    </p>
+
+                    <div class="profile-card">
+                        <div>
+                            <div class="name">Ariel Ben Cédric ZOUBE</div>
+                            <div class="title" data-i18n="profileTitle">Ingénieur Réseaux & Systèmes</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-mini">
+                        <a href="tel:+23674125758"><i class="fa-solid fa-phone"></i> +236 74 12 57 58</a>
+                        <a href="mailto:arielzoube@gmail.com"><i class="fa-solid fa-envelope"></i> arielzoube@gmail.com</a>
+                        <span><i class="fa-solid fa-location-dot"></i> Bangui, RCA</span>
+                        <a href="https://github.com/arielzoube-web" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/zoube-ariel-ben-cedric-66687a401" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="assets/cv/CV_Ariel_Ben_Cedric_Zoube.pdf" download class="btn-accent d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-download"></i><span data-i18n="cvBtn">Télécharger mon CV</span>
+                        </a>
+                        <a href="#projets" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-eye"></i><span data-i18n="projectsBtn">Voir mes projets</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div class="hero-photo">
+                        <img src="assets/images/photo-profil.jpg" alt="Photo de profil d'Ariel Ben Cédric ZOUBE" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%231D4ED8%22 width=%22100%22 height=%22100%22/><text fill=%22white%22 font-size=%2240%22 x=%2225%22 y=%2260%22>AZ</text></svg>'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     À PROPOS
+    ============================================================ -->
+    <section id="apropos" class="section-panel">
+        <div class="panel reveal">
+            <div class="eyebrow"><span class="about-label" data-i18n="aboutLabel">À propos</span></div>
+            <h2 class="section-title" data-i18n="aboutTitle">Mon parcours &amp; mes objectifs</h2>
+            <p class="section-subtitle" data-i18n="aboutSub">Découvrez mon histoire, mes compétences et ma vision.</p>
+
+            <p class="about-intro" data-i18n="aboutIntro">
+                Je suis un ingénieur récemment diplômé de l'IST de Bangui. Mon parcours m'a permis de développer des compétences solides en administration systèmes et réseaux, ainsi qu'en cybersécurité et en intelligence artificielle.
+            </p>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h4><i class="fa-solid fa-graduation-cap"></i> Parcours universitaire</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Brevet des Collèges (2018) — Lycée Saint Marcelin Champagnat, Berberati</li>
+                        <li><i class="fa-solid fa-check"></i> Baccalauréat Série C (2022) — Lycée Complexe Scolaire Abed-Nego, Bangui</li>
+                        <li><i class="fa-solid fa-check"></i> DUT Réseaux et Systèmes Informatiques (2024) — IST, Université de Bangui</li>
+                        <li><i class="fa-solid fa-check"></i> Licence Pro Réseaux et Systèmes Informatiques (2026) — IST, Université de Bangui</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h4><i class="fa-solid fa-bolt"></i> Compétences clés</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Administration Système &amp; Réseau</li>
+                        <li><i class="fa-solid fa-check"></i> Machine Learning appliqué à la cybersécurité</li>
+                        <li><i class="fa-solid fa-check"></i> IDS/IPS (pfSense)</li>
+                        <li><i class="fa-solid fa-check"></i> Développement backend (FastAPI, Laravel, Flask)</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h4><i class="fa-solid fa-globe"></i> Langues</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Sango — langue maternelle</li>
+                        <li><i class="fa-solid fa-check"></i> Français — courant</li>
+                        <li><i class="fa-solid fa-check"></i> Anglais — notions</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h4><i class="fa-solid fa-heart"></i> Centres d'intérêt</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Jeux vidéo stratégiques</li>
+                        <li><i class="fa-solid fa-check"></i> Sport collectif</li>
+                        <li><i class="fa-solid fa-check"></i> Musique</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h4><i class="fa-solid fa-star"></i> Qualités personnelles</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Curiosité &amp; apprentissage rapide</li>
+                        <li><i class="fa-solid fa-check"></i> Attitude positive &amp; motivée</li>
+                        <li><i class="fa-solid fa-check"></i> Résilience face aux difficultés</li>
+                    </ul>
+                </div>
+                <div class="about-card" style="grid-column: 1 / -1;">
+                    <h4><i class="fa-solid fa-bullseye"></i> Mon objectif</h4>
+                    <p data-i18n="aboutGoal">
+                        Intégrer une équipe dynamique en tant qu'ingénieur réseaux et systèmes, avec une spécialisation future en DevSecOps et IA appliquée à la sécurité. Contribuer à des projets innovants et sécurisés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     COMPÉTENCES
+    ============================================================ -->
+    <section id="competences" class="section-panel">
+        <div class="panel reveal">
+            <div class="eyebrow" data-i18n="skillsEyebrow">Compétences</div>
+            <h2 class="section-title" data-i18n="skillsTitle">Technologies &amp; outils</h2>
+            <p class="section-subtitle" data-i18n="skillsSub">Les logiciels, langages et systèmes que j'utilise au quotidien.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-server"></i> Réseaux</h4>
+                    <div class="tags">
+                        <span class="tag">Administration Réseau</span>
+                        <span class="tag">Configuration</span>
+                        <span class="tag">pfSense</span>
+                        <span class="tag">Centreon</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-desktop"></i> Systèmes</h4>
+                    <div class="tags">
+                        <span class="tag">Linux (Shell)</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Maintenance</span>
+                        <span class="tag">Administration Système</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-shield-halved"></i> Cybersécurité</h4>
+                    <div class="tags">
+                        <span class="tag">IDS/IPS</span>
+                        <span class="tag">Sécurisation des données</span>
+                        <span class="tag">Détection d'intrusion (notions)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-code"></i> Programmation</h4>
+                    <div class="tags">
+                        <span class="tag">Python (bonne pratique)</span>
+                        <span class="tag">PHP/Laravel (bonne pratique)</span>
+                        <span class="tag">JavaScript (notions)</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-database"></i> Bases de données</h4>
+                    <div class="tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL (requêtes)</span>
+                        <span class="tag">PostgreSQL (notions)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fa-solid fa-tools"></i> Outils &amp; Environnement</h4>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">FastAPI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     PROJETS
+    ============================================================ -->
+    <section id="projets" class="section-panel">
+        <div class="panel reveal">
+            <div class="eyebrow" data-i18n="projEyebrow">Mes projets</div>
+            <h2 class="section-title" data-i18n="projTitle">Réalisations académiques &amp; personnelles</h2>
+            <p class="section-subtitle" data-i18n="projSub">Des projets qui reflètent mes compétences techniques.</p>
+
+            <div class="filter-row" role="group">
+                <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Tous</button>
+                <button class="filter-btn" data-filter="ia" data-i18n="filterIa">IA / ML</button>
+                <button class="filter-btn" data-filter="securite" data-i18n="filterSec">Sécurité</button>
+                <button class="filter-btn" data-filter="dev" data-i18n="filterDev">Développement</button>
+                <button class="filter-btn" data-filter="reseaux" data-i18n="filterNet">Réseaux</button>
+            </div>
+
+            <div class="project-grid" id="projectGrid">
+                <!-- Projet 1 : IA -->
+                <div class="project-card" data-category="ia securite">
+                    <div class="thumb"><i class="fa-solid fa-robot"></i></div>
+                    <div class="body">
+                        <h4 data-i18n="proj1Title">Détection d'intrusions par ML</h4>
+                        <p data-i18n="proj1Desc">Random Forest, dataset CICIDS — Projet de Licence (2026)</p>
+                        <div class="tags"><span>Random Forest</span><span>Scikit-learn</span><span>CICIDS</span></div>
+                        <button class="btn btn-sm btn-outline-custom mt-2" onclick="openProjectModal('proj1')">
+                            <i class="fa-solid fa-eye"></i> <span data-i18n="viewDetail">Voir le détail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : pfSense -->
+                <div class="project-card" data-category="securite reseaux">
+                    <div class="thumb"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="body">
+                        <h4 data-i18n="proj2Title">IDS/IPS sous pfSense</h4>
+                        <p data-i18n="proj2Desc">Configuration d'un système de détection et prévention d'intrusions — Exposé (2025)</p>
+                        <div class="tags"><span>pfSense</span><span>IDS/IPS</span></div>
+                        <button class="btn btn-sm btn-outline-custom mt-2" onclick="openProjectModal('proj2')">
+                            <i class="fa-solid fa-eye"></i> <span data-i18n="viewDetail">Voir le détail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projet 3 : Centreon -->
+                <div class="project-card" data-category="reseaux">
+                    <div class="thumb"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="body">
+                        <h4 data-i18n="proj3Title">Monitoring avec Centreon</h4>
+                        <p data-i18n="proj3Desc">Supervision réseau open-source — Projet de DUT (2024)</p>
+                        <div class="tags"><span>Centreon</span><span>SNMP</span></div>
+                        <button class="btn btn-sm btn-outline-custom mt-2" onclick="openProjectModal('proj3')">
+                            <i class="fa-solid fa-eye"></i> <span data-i18n="viewDetail">Voir le détail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projet 4 : Mairie -->
+                <div class="project-card" data-category="dev">
+                    <div class="thumb"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="body">
+                        <h4 data-i18n="proj4Title">Gestion des actes de naissance</h4>
+                        <p data-i18n="proj4Desc">Application web Laravel pour la Mairie de Bangui — Exposé (2024)</p>
+                        <div class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
+                        <button class="btn btn-sm btn-outline-custom mt-2" onclick="openProjectModal('proj4')">
+                            <i class="fa-solid fa-eye"></i> <span data-i18n="viewDetail">Voir le détail</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projet 5 : Mini-Wallet -->
+                <div class="project-card" data-category="dev securite">
+                    <div class="thumb"><i class="fa-solid fa-wallet"></i></div>
+                    <div class="body">
+                        <h4 data-i18n="proj5Title">Mini-Wallet</h4>
+                        <p data-i18n="proj5Desc">Simulation pédagogique d'un portefeuille électronique — Projet personnel</p>
+                        <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
+                        <div class="d-flex gap-2 mt-2">
+                            <button class="btn btn-sm btn-outline-custom" onclick="openProjectModal('proj5')">
+                                <i class="fa-solid fa-eye"></i> <span data-i18n="viewDetail">Voir le détail</span>
+                            </button>
+                            <a href="https://github.com/arielzoube-web" target="_blank" class="btn btn-sm btn-accent">
+                                <i class="fa-brands fa-github"></i> <span data-i18n="viewCode">Voir le code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     PARCOURS
+    ============================================================ -->
+    <section id="parcours" class="section-panel">
+        <div class="panel reveal">
+            <div class="eyebrow" data-i18n="pathEyebrow">Parcours</div>
+            <h2 class="section-title" data-i18n="pathTitle">Mon parcours scolaire &amp; universitaire</h2>
+            <p class="section-subtitle" data-i18n="pathSub">Les étapes clés de ma formation.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="title">Brevet des Collèges</div>
+                    <div class="desc">Lycée Saint Marcelin Champagnat — Berberati</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="title">Baccalauréat Série C</div>
+                    <div class="desc">Lycée Complexe Scolaire Abed-Nego — Bangui</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="title">DUT Réseaux et Systèmes Informatiques</div>
+                    <div class="desc">Institut Supérieur de Technologie — Université de Bangui</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2026</div>
+                    <div class="title">Licence Professionnelle Réseaux et Systèmes Informatiques</div>
+                    <div class="desc">Institut Supérieur de Technologie — Université de Bangui</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">—</div>
+                    <div class="title">Aucune certification officielle</div>
+                    <div class="desc">Aucune certification reçue à ce jour.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     MÉMOIRE
+    ============================================================ -->
+    <section id="memoire" class="section-panel">
+        <div class="panel reveal">
+            <div class="eyebrow" data-i18n="memoireEyebrow">Mémoire</div>
+            <h2 class="section-title" data-i18n="memoireTitle">Mémoire de Licence</h2>
+            <p class="section-subtitle" data-i18n="memoireSub">Mon travail de recherche sur la cybersécurité et l'IA.</p>
+
+            <div class="memoire-card">
+                <h3>Application de l'intelligence artificielle à la cybersécurité : détection d'intrusions et classification des attaques</h3>
+                <p data-i18n="memoirePlaceholder">Résumé à venir — Le document PDF sera disponible prochainement.</p>
+                <div class="memoire-status">
+                    <i class="fa-solid fa-file-pdf"></i> <span data-i18n="memoireStatus">PDF à télécharger (bientôt disponible)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     CONTACT
+    ============================================================ -->
+    <section id="contact" class="section-panel">
+        <div class="panel reveal" style="text-align:center;">
+            <div class="eyebrow" style="justify-content:center;">Contact</div>
+            <h2 class="section-title" data-i18n="contactTitle">Parlons de votre projet</h2>
+            <p class="section-subtitle" data-i18n="contactSub">Disponible pour une prise de poste ou un stage.</p>
+            <a href="https://wa.me/23674125758" target="_blank" class="contact-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="whatsappBtn">Discuter sur WhatsApp</span>
+            </a>
+            <div style="margin-top:20px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+                <a href="mailto:arielzoube@gmail.com" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/arielzoube-web" target="_blank" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/zoube-ariel-ben-cedric-66687a401" target="_blank" class="btn-outline-custom d-inline-flex align-items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+    ============================================================ -->
+    <footer style="text-align:center; padding:24px; color:var(--text-dim); border-top:1px solid var(--border); font-size:13px;">
+        <span data-i18n="footerText">© 2026 — Ariel Ben Cédric ZOUBE | Ingénieur Réseaux &amp; Systèmes</span>
+    </footer>
+
+    <!-- ============================================================
+     MODALE PROJET
+    ============================================================ -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

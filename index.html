@@ -200,10 +200,10 @@
 
             <ul class="hidden lg:flex items-center gap-6 text-sm" role="list">
                 <li><a href="#about" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='about'?'on !text-zinc-900 dark:!text-white':''">À propos</a></li>
-                <li><a href="#skills" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='skills'?'on !text-zinc-900 dark:!text-white':''">Compétences</a></li>
+                
                 <li><a href="#work" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='work'?'on !text-zinc-900 dark:!text-white':''">Projets</a></li>
-                <li><a href="#memoire" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='memoire'?'on !text-zinc-900 dark:!text-white':''">Mémoire</a></li>
                 <li><a href="#formation" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='formation'?'on !text-zinc-900 dark:!text-white':''">Formation</a></li>
+                <li><a href="#skills" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='skills'?'on !text-zinc-900 dark:!text-white':''">Compétences</a></li>
                 <li><a href="#cv" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='cv'?'on !text-zinc-900 dark:!text-white':''">CV</a></li>
                 <li><a href="#contact" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='contact'?'on !text-zinc-900 dark:!text-white':''">Contact</a></li>
             </ul>
@@ -236,7 +236,7 @@
                 <li><a href="#memoire" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Mémoire</a></li>
                 <li><a href="#formation" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Formation</a></li>
                 <li><a href="#cv" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">CV</a></li>
-                <li><a href="#contact" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Contact</a></li>
+
                 <li class="pt-2 border-t border-zinc-100 dark:border-zinc-900">
                     <a href="#contact" @click="mm=false" class="inline-flex shimmer bg-accent text-white font-medium text-sm px-5 py-2.5 rounded-full">Me contacter →</a>
                 </li>
@@ -278,10 +278,7 @@
                                 <p class="font-display font-bold text-3xl text-zinc-900 dark:text-white">4</p>
                                 <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Diplômes obtenus</p>
                             </div>
-                            <div>
-                                <p class="font-display font-bold text-3xl text-zinc-900 dark:text-white">3</p>
-                                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-1">Langues parlées</p>
-                            </div>
+
                         </div>
                     </div>
 
@@ -297,7 +294,90 @@
                 </div>
             </div>
         </section>
+   <!-- ═══ ABOUT ═══ -->
+<section id="about" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
+    <div class="max-w-4xl mx-auto px-6">
 
+        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3 text-center">À propos de moi</p>
+        <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white leading-tight mb-8 text-center">Qui je suis &amp; ce que je vise</h2>
+
+        <p class="reveal d2 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4 text-lg">
+            Je suis Ariel Ben Cédric ZOUBE, titulaire d'une Licence Professionnelle en Réseaux et Systèmes Informatiques (Institut Supérieur de Technologie, Université de Bangui). Je suis basé à Bangui, en Centrafrique.
+        </p>
+        <p class="reveal d3 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-12 text-lg">
+            Passionné par la cybersécurité, le développement et l'intelligence artificielle, je cherche à intégrer une équipe dynamique pour relever des défis techniques et construire une expérience professionnelle solide. Curieux, rigoureux et motivé.
+        </p>
+
+        <div class="reveal d4 grid sm:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-6 text-center">
+                <p class="font-display font-bold text-3xl text-accent">RSI</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-2">Licence Réseaux &amp; Systèmes Informatiques</p>
+            </div>
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-6 text-center">
+                <p class="font-display font-bold text-3xl text-accent">Bangui</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-2">Centrafrique</p>
+            </div>
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-6 text-center">
+                <p class="font-display font-bold text-3xl text-accent">Cyber</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-2">Orienté Cybersécurité</p>
+            </div>
+        </div>
+
+        <!-- Parcours détaillé : 3 domaines -->
+        <div class="reveal d4 space-y-10 mb-16">
+
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white">Cybersécurité</h3>
+                </div>
+                <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    Mon intérêt pour la cybersécurité vient de ma formation en Réseaux et Systèmes, où j'ai appris à comprendre l'architecture des infrastructures avant de m'intéresser à leurs failles. Je m'exerce sur des environnements de test pour comprendre les mécanismes d'attaque et de défense (sécurisation réseau, gestion des accès, bonnes pratiques de durcissement des systèmes). J'aime aborder la sécurité comme un raisonnement méthodique : identifier une faiblesse, comprendre son impact réel, puis proposer une correction durable plutôt qu'un simple correctif ponctuel.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 8l-4 4 4 4"/></svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white">Développement</h3>
+                </div>
+                <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    En parallèle de la sécurité, je développe mes compétences en développement web, du front-end au back-end, pour mieux comprendre comment les applications que je sécurise sont réellement construites. Cette double approche me permet de coder en gardant toujours une réflexion sur la robustesse et la sécurité du produit final. Je travaille aussi bien sur des projets personnels que sur des exercices pratiques pour consolider mes bases et gagner en autonomie sur des projets complets, de la conception à la mise en ligne.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-2xl p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white">Intelligence Artificielle</h3>
+                </div>
+                <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    L'intelligence artificielle est un domaine que j'explore avec curiosité, notamment sous l'angle de son intersection avec la cybersécurité : détection d'anomalies, automatisation de tâches d'analyse, ou encore compréhension des risques que l'IA elle-même peut introduire dans un système. Sans être encore un expert du domaine, je m'y forme progressivement, convaincu que l'IA deviendra un outil incontournable aussi bien pour attaquer que pour défendre les systèmes de demain.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="reveal d4">
+            <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3 text-center">Langues &amp; centres d'intérêt</p>
+            <div class="flex flex-wrap justify-center gap-2" role="list" aria-label="Langues et intérêts">
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Sango (maternelle)</span>
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Français (courant)</span>
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Anglais (notions)</span>
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Jeux vidéo stratégiques</span>
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Sport collectif</span>
+                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Musique</span>
+            </div>
+        </div>
+
+    </div>
+</section>
         <!-- ═══ WORK / PROJETS ═══ -->
         <section id="work" class="py-24">
             <div class="max-w-6xl mx-auto px-6">
@@ -374,120 +454,9 @@
             </div>
         </section>
 
-        <!-- ═══ ABOUT ═══ -->
-        <section id="about" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="grid md:grid-cols-2 gap-16 items-center">
 
-                    <div class="reveal order-2 md:order-1">
-                        <div class="pf w-full aspect-square max-w-sm mx-auto rounded-3xl">
-                            <img src="assets/ariel-photo.jpg" alt="Ariel Ben Cédric ZOUBE" loading="lazy">
-                        </div>
-                    </div>
 
-                    <div class="order-1 md:order-2">
-                        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">À propos de moi</p>
-                        <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white leading-tight mb-6">Qui je suis &amp;<br>ce que je vise</h2>
-                        <p class="reveal d2 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                            Je suis Ariel Ben Cédric ZOUBE, titulaire d'une Licence Professionnelle en Réseaux et Systèmes Informatiques (Institut Supérieur de Technologie, Université de Bangui). Je suis basé à Bangui, en Centrafrique.
-                        </p>
-                        <p class="reveal d3 text-zinc-500 dark:text-zinc-400 leading-relaxed mb-8">
-                            Passionné par la cybersécurité, le développement et l'intelligence artificielle, je cherche à intégrer une équipe dynamique pour relever des défis techniques et construire une expérience professionnelle solide. Curieux, rigoureux et motivé.
-                        </p>
-                        <div class="reveal d4">
-                            <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Langues &amp; centres d'intérêt</p>
-                            <div class="flex flex-wrap gap-2" role="list" aria-label="Langues et intérêts">
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Sango (maternelle)</span>
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Français (courant)</span>
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Anglais (notions)</span>
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Jeux vidéo stratégiques</span>
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Sport collectif</span>
-                                <span role="listitem" class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Musique</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ COMPÉTENCES ═══ -->
-        <section id="skills" class="py-24">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="mb-14">
-                    <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Compétences</p>
-                    <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Outils, langages &amp; technologies</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
-                    <div class="reveal d1">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">IA &amp; Data</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Scikit-learn</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Pandas</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">NumPy</span>
-                        </div>
-                    </div>
-                    <div class="reveal d1">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Sécurité</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Suricata</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">pfSense</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Sécurisation des données</span>
-                        </div>
-                    </div>
-                    <div class="reveal d2">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Backend &amp; API</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">FastAPI</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Laravel</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Flask</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Node.js</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PostgreSQL</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SQLAlchemy</span>
-                        </div>
-                    </div>
-                    <div class="reveal d2">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">DevOps &amp; déploiement</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Docker</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Git / GitHub</span>
-                        </div>
-                    </div>
-                    <div class="reveal d3">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Systèmes &amp; réseaux</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Administration Système</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Administration Réseau</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Linux (Shell)</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PowerShell</span>
-                        </div>
-                    </div>
-                    <div class="reveal d3">
-                        <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Langages &amp; Frameworks</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Python</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PHP</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">JavaScript</span>
-                            <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══ MÉMOIRE ═══ -->
-        <section id="memoire" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="mb-10">
-                    <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Mémoire</p>
-                    <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Mémoire de fin d'études</h2>
-                </div>
-                <div class="reveal d2 border-2 border-dashed border-zinc-300 dark:border-zinc-700 rounded-3xl p-16 text-center">
-                    <svg class="w-10 h-10 text-accent mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"/></svg>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- ═══ FORMATION ═══ -->
         <section id="formation" class="py-24">
@@ -515,9 +484,112 @@
                         <p class="text-sm text-zinc-500 dark:text-zinc-400">Institut Supérieur de Technologie – Université de Bangui</p>
                     </article>
                 </div>
-                <p class="reveal mt-8 text-sm text-zinc-400 italic">Aucune certification professionnelle pour le moment — section mise à jour dès obtention.</p>
+                
             </div>
         </section>
+        <!-- ═══ COMPÉTENCES ═══ -->
+       <section id="skills" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-14">
+                <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Compétences</p>
+                <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Outils, langages &amp; technologies</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                <div class="reveal d1">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">IA &amp; Data</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Scikit-learn</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Pandas</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">NumPy</span>
+                    </div>
+                </div>
+
+                <!-- ============================================================ -->
+                <!--  BLOC SÉCURITÉ COMPLÈTEMENT REVU ET ENRICHIE                   -->
+                <!-- ============================================================ -->
+                <div class="reveal d1">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Sécurité informatique</p>
+                    <div class="flex flex-wrap gap-2">
+                        <!-- Sécurité réseau & infrastructure -->
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">pfSense (Firewall)</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Suricata (IDS/IPS)</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Wireshark (Analyse réseau)</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Nmap (Scan de ports)</span>
+                        
+                        <!-- Protocoles sécurisés / Chiffrement -->
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">TLS / SSL</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SSH / SFTP</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">OpenVPN / IPsec</span>
+
+                        <!-- Gestion des identités & supervision -->
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">IAM / Active Directory</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SIEM (Splunk / ELK)</span>
+
+                        <!-- Sécurité applicative & tests -->
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">OWASP Top 10</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Kali Linux (Pentesting)</span>
+
+                        <!-- Conformité & gouvernance -->
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">RGPD / Sécurisation des données</span>
+                    </div>
+                </div>
+                <!-- ============================================================ -->
+
+                <div class="reveal d2">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Backend &amp; API</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">FastAPI</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Django</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Laravel</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Flask</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Symfony</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Node.js</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PostgreSQL</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SQL</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SQLAlchemy</span>
+                    </div>
+                </div>
+                <div class="reveal d2">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">DevOps &amp; déploiement</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Docker</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Git / GitHub</span>
+                    </div>
+                </div>
+                <div class="reveal d3">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Systèmes &amp; réseaux</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Administration Système</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Administration Réseau</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Linux (Shell)</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PowerShell</span>
+                    </div>
+                </div>
+                <div class="reveal d3">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Langages &amp; Frameworks</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Python</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">PHP</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">JavaScript</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <!-- Bloc Design & UI/UX (ajouté précédemment) -->
+                <div class="reveal d4">
+                    <p class="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">Design &amp; UI/UX</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Figma</span>
+                        <span class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Canva</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
 
         <!-- ═══ CV ═══ -->
         <section id="cv" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
@@ -560,14 +632,14 @@
                                     <span class="text-sm">+236 74 12 57 58</span>
                                 </a>
                                 <!-- 👉 AJOUTE TON LIEN LINKEDIN ICI (remplace le # entre les guillemets) -->
-                                <a href="#" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+                                <a href="https://linkedin.com/in/ariel-zoube" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
                                     <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </span>
                                     <span class="text-sm">LinkedIn</span>
                                 </a>
                                 <!-- 👉 AJOUTE TON LIEN GITHUB ICI (remplace le # entre les guillemets) -->
-                                <a href="#" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+                                <a href="https://github.com/arielzoube-web" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
                                     <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               </span>
